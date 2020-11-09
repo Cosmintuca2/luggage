@@ -1,0 +1,20 @@
+.luggage-items-section {
+    display: flex;
+    padding: 1em;
+}
+
+.luggage-items-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+}
+
+.luggage-card {
+    display:flex;
+    flex-direction: column;
+    flex-basis:0;
+    flex-grow:1;
+    padding:1em;
+}

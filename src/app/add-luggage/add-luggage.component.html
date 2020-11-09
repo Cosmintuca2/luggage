@@ -1,0 +1,47 @@
+<form #LuggageForm="ngForm" (ngSubmit)="onSubmit(LuggageForm)">
+    <div class="field">
+        <div class="field-body">
+            <div class="element">
+                <p>
+                    <input type="number" 
+                    readonly
+                    name="id"
+                    style="width:4em;" 
+                    class="form-control" 
+                    placeholder="Id"
+                    [(ngModel)]="luggageItem.id" >
+                </p>
+            </div>      
+            <div class="element">
+                <p>
+                    <input type="text" 
+                    required
+                    name="content"
+                    style="width:7em;" 
+                    class="form-control" 
+                    placeholder="Content"
+                    [(ngModel)]="luggageItem.content" >
+                    </p>
+            </div>
+            <div class="element">
+                <p>
+                <input type="text" 
+                required
+                name="currentHour"
+                style="width:10em;" 
+                class="form-control" 
+                placeholder="Enter hour"
+                [(ngModel)]="luggageItem.currentHour" >
+                </p>
+            </div>
+            <div class="element">
+                <p>
+                    <button type="submit"
+                    class="btn btn-primary"
+                    [disabled]="!LuggageForm.valid" 
+                    >Add</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</form>

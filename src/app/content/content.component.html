@@ -1,0 +1,28 @@
+<section class="number-of-luggage-section">
+    <h4 [ngClass]="{'green' : totalLuggages > 0}"> Number of total Luggages: {{ totalLuggages }}</h4>
+</section>
+
+<section class="add-luggage-section">
+    <div class="add-luggage-container">
+        <app-add-luggage (formSubmit)="addItem($event)"></app-add-luggage>
+    </div>
+</section>
+
+<hr>
+<hr>
+
+<section class="input-for-retrieving">  
+        <h4>Retrieve a luggage: </h4>
+        <input type="text" 
+        id="retrieve"
+        style="width:10em;" 
+        placeholder="Enter id"
+        class="form-control" 
+        (change)="deleteThisOne()">
+</section>
+
+<hr>
+<hr>
+<section class="luggage-list-section">
+    <app-luggage-list [luggagesList]="luggagesList" (retrieve)="retrieveItem($event)"></app-luggage-list>
+</section>

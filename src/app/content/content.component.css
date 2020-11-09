@@ -1,0 +1,24 @@
+.number-of-luggage-section {
+    display:flex;    
+    justify-content: center;
+}
+h4 {
+    padding-top: 5px;
+}
+.add-luggage-section {
+    display:flex;
+    justify-content: center;
+}
+
+.add-luggage-container {
+   width:50%;
+}
+
+.green { 
+    color: green;
+}
+
+.input-for-retrieving {
+    display:flex;
+    justify-content: center;
+}

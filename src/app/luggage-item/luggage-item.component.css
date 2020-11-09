@@ -1,0 +1,14 @@
+.btn {
+    cursor:pointer;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card {
+    flex-grow : 1;
+}
+
+  

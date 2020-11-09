@@ -1,0 +1,12 @@
+<section class="luggage-items-section">
+    <div  class="luggage-items-container">
+        <div *ngFor="let luggage of luggagesList">
+            <div class="luggage-card">
+                <app-luggage-item 
+                [luggage]="luggage"
+                (retrieveLuggage)="retrieveLuggage(luggage)"
+                ></app-luggage-item>
+            </div>
+        </div>
+    </div> 
+</section>
